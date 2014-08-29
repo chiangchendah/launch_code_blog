@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+ <!--
+	
+	theme three beta version 1.0
+	by homemade themes & themesbyjames, created january 2013.
+
+	http://themesbyjames.tumblr.com 
+	http://homemadethemes.tumblr.com
+	
+    	for cover photo images go to
+	http://homemadethemes.tumblr.com/cover-images/
+	
+  -->
+
+<html><head>
+
+<title>LaunchPad</title>
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+<link rel="shortcut icon" href="{Favicon}">
+<meta http-equiv="X-UA-Compatiblebl" content="IE=edge,chrome=1">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+<meta name="viewport" content="width=1220" />
+<meta name="color:Background" content="#EBEBEB" />
+<meta name="color:Center Background" content="#FFFFFF" />
+<meta name="color:Social Icons Background" content="#CCCCCC" />
+<meta name="color:Feature Color" content="#000000" />
+<meta name="color:Text" content="#000000" />
+<meta name="color:Blog Title" content="#FFFFFF" />
+<meta name="color:Link" content="#333333"/>
+<meta name="color:Link Hover" content="#292929" />
+<meta name="image:Cover Photo" content="" />
+<meta name="image:Logo" content="" />
+<meta name="image:Background" content="" />
+<meta name="image:Sidebar" content="" />
+<meta name="Body font" content="Helvetica Neue">
+ 
+<meta name="if:Show Cover" content="1"/>
+<meta name="if:Show Sidebar" content="1"/>
+<meta name="if:Rounded Photos" content="0"/>
+<meta name="if:Show Blog Title" content="1"/>
+<meta name="if:Show Description" content="1"/>
+<meta name="if:Show Photo Permalinks" content="1"/>
+<meta name="if:Show Photo Captions" content="0"/>
+<meta name="if:Black Social Icons" content="0"/>
+
+<meta name="if:Show Facebook Icon" content="0"/>
+<meta name="if:Show Twitter Icon" content="0"/>
+<meta name="if:Show Instagram Icon" content="0"/>
+<meta name="if:Show Google Plus Icon" content="0"/>
+<meta name="if:Show Pinterest Icon" content="0"/>
+<meta name="if:Show Skype Icon" content="0"/>
+<meta name="if:Show Youtube Icon" content="0"/>
+<meta name="if:Show Message Icon" content="0"/>
+
+<meta name="text:Ask Title" content="Message" />
+<meta name="text:Facebook link" content="http://"/>
+<meta name="text:Twitter Link" content="http://"/>
+<meta name="text:Instagram Link"  content="http://"/>
+<meta name="text:Google Plus Link"  content="http://"/>
+<meta name="text:Pinterest Link"  content="http://"/>
+<meta name="text:Skype Link" content="http://"/>
+<meta name="text:Youtube Link"  content="http://"/>
+<meta name="text:Text Online User Counter" content="" />
+<meta name="text:Link One" content="" />
+<meta name="text:Link One Title" content="" />
+<meta name="text:Link Two" content=""/>
+<meta name="text:Link Two Title" content="" />
+<meta name="text:Link Three" content="" />
+<meta name="text:Link Three Title" content="" />
+<meta name="text:Link Four" content="" />
+<meta name="text:Link Four Title" content="" />
+<meta name="text:Link Five" content="" />
+<meta name="text:Link Five Title" content="" />
+<meta name="text:Link Six" content="" />
+<meta name="text:Link Six Title" content="" />
+<meta name="text:Text Online User Counter" content="" />
+
+<link href="http://static.tumblr.com/ek9ly4s/dVwmzbmv7/homemadebyjames.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://static.tumblr.com/ek9ly4s/ZPLmx9glq/jquery-latest-homemadethemes.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/ek9ly4s/ts7mxbkbc/infinite-scroll.js"></script>
+
+<style type="text/css">
+
+@font-face {font-family: 'Nexa'; src: url('http://static.tumblr.com/whgtjbt/CBana5ppp/nexa-xbold.otf') format('opentype'); }  
+
+@font-face {font-family: 'Caecilia'; src: url('http://static.tumblr.com/whgtjbt/Syuna5o3x/caecilialtstd-light.otf') format('opentype'); }
+
+
+
+html{
+    height:103%;}
+
+body, p {
+    font-family: Caecilia,  Helvetica, Arial, sans-serif;
+    font-style: normal;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+}
+ 
+body {
+	background-color:{color:background};
+	background-image:url({image:Background});
+	background-attachment: fixed;
+	background-repeat: repeat;
+    color: #344a5f;
+}
+
+
+a {
+	text-decoration:none;
+	color: #5c93ce;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	transition: all 0.4s linear;}
+	
+a:link, a:active, a:visited{
+	color: {color:Link};
+	text-decoration: none;
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all   0.6s ease-out;transition: all 0.6s ease-out;}
+ 
+a:hover{
+	color:{color:link hover};}
+ 
+
+
+{block:indexpage}
+.photo{
+    width:250px;
+    height:auto;}
+{/block:indexpage}
+
+.photo img{
+	{block:indexpage}width:250px;{/block:indexpage}
+	-webkit-transition: 0.3s ease-in;}
+
+ #chat li{
+     padding:7px 10px;
+     border-bottom:2px solid {color:feature color};}
+
+blockquote{
+    margin:5px 0;
+    border-left:2px solid{color:Text};
+    padding-left:10px}
+	
+
+
+#navigation a:hover{
+    background:{color:feature color};
+    color: #ffffff;
+    -webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;}
+	
+::-webkit-input-placeholder{
+    color:#555555;font:15px "Source Sans Pro", san-serif}
+:-moz-placeholder{
+    color:#555555;font-size:15px "Source Sans Pro", san-serif}
+::-moz-placeholder{
+    color:#555555;
+    font-size:15px "Source Sans Pro", san-serif}
+    :-ms-input-placeholder{
+    color:#555555;
+    font-size:15px "Source Sans Pro", san-serif}
+
+#sidebar{
+    {block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedPhotos}
+    background-color:{color:Center Background};
+    width:250px;
+    float:left;
+	padding:5px 5px 5px 5px;
+	margin:25px 25px 20px 25px;
+	{block:PermalinkPage}
+	display:none;
+	visibility:hidden;
+	{block:PermalinkPage}
+	height:auto;}
+
+.sidebar img{
+    {block:ifRoundedPhotos}border-radius:3px;{/block:ifroundedPhotos}}
+
+#social-icons img{
+    height:26px;
+    width:26px;
+    margin-right:5px;
+    margin-bottom:5px; 
+    border-radius:32px;
+    border:4px solid {color:Social Icons Background};
+    background-color:{color:Social Icons Background};
+    -webkit-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear}
+	
+.xpermanote a{
+    font-size:11px;
+    font-family:pt sans;
+    line-height:24px;
+    text-transform:uppercase;
+    color:white;
+    font-style:bold;}
+
+.xlink{
+    margin-left:-5px;
+    margin-top:-5px;
+    padding:10px;
+    {block:indexpage}
+    width:240px;
+    border-top:13px solid {color:feature color};
+    {/block:indexpage}
+    font-size:20px;
+    margin-bottom:-5px;}
+    
+.xquote{
+    margin-left:-5px;
+    margin-top:-5px;
+    padding:10px;
+    {block:indexpage}
+    width:240px;
+    border-top:13px solid {color:feature color};
+    {/block:indexpage}
+    font-size:20px;
+    margin-bottom:-5px;}   
+
+
+
+.entry{
+    {block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedPhotos}
+    background-color:{color:Center Background};
+ 	margin:25px;
+	margin-bottom:30px;	
+	padding:5px 5px 2px 5px;
+	float:left;
+	height:auto;
+	{block:IndexPage}overflow:hidden;width:300px;{/block:IndexPage}
+	{block:PermalinkPage}width:500px;height:auto;{/block:PermalinkPage}
+    -moz-box-shadow:    0 0 11px 3px #ccc;
+    -webkit-box-shadow: 0 0 11px 3px #ccc;
+    box-shadow:         0 0 11px 3px #ccc;
+}
+
+.entry img{
+    {block:ifRoundedPhotos}border-radius:3px;{/block:ifroundedPhotos}
+    {block:IndexPage}width:230px;{/block:IndexPage}}   
+ 
+    
+#cover{
+    background:url("{image:cover photo}") no-repeat center;
+    background-size:cover;
+    background-color:{color:feature color};}
+
+#cover #cover-overlay{background-color:{color:feature color};}
+
+#cover{
+    position:relative;
+    width:100%;
+    height:300px;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    letter-spacing:3px;
+    color:{color:feature color};}
+
+#cover a{
+    font-family: Nexa, Helvetica, Arial, sans-serif;
+    border-radius:0px;
+    line-height:150px;
+    text-transform: uppercase;
+    font-weight:400;
+    padding:15px 10px 10px 15px;
+    {block:ifnotLogoImage}
+    border: 2px solid #5c93ce;
+    {/block:ifnotLogoImage}
+    color:{color:blog title};}
+
+#description{
+    text-align:center;
+    margin:10px 20% 0px 20%;
+    padding:10px 30px 0px 30px;
+    font-size: 13px;
+    color: white;
+    font-family: Caecilia, Helvetica, Arial, sans-serif;
+}
+
+#hello {
+    font-size: 30px;
+    font-family: Caecilia, Helvetica, Arial, sans-serif;
+    color:white;
+}
+
+#content{
+	margin: 0 auto;
+	position:relative;
+	padding-bottom:10px;
+	{block:IndexPage}width:100%;{/block:IndexPage}
+	{block:PermalinkPage}width:500px;{/block:PermalinkPage}
+    display: table-cell;
+}
+
+
+
+aside {
+    display:table-cell;
+    width:200px;
+    
+}
+
+.container {
+    display:table;
+}
+
+.row {
+    display:table-row;
+}
+
+@media (max-wdith: 400px) {
+    aside {
+        display: block;
+    }
+    .container {
+        display: block;
+    }
+}
+
+
+.xtext{
+    margin-left:-5px;
+    margin-top:-5px;
+    padding:30px;
+    {block:indexpage}
+    width:240px;
+    {/block:indexpage}
+    margin-bottom:-5px;
+    
+}    
+
+.xtext p {
+    line-height:2em;
+}
+   
+
+.title {
+    display: block;
+    font-size: 20px;
+    letter-spacing:2px;
+    padding: 10px 0;
+    font-weight:bold;
+}
+    
+.read_more_container {
+    font-family: Nexa, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin:10px auto;
+    
+}
+
+.read_more_container a {
+    color: #5c93ce;
+}
+
+.video {
+    width: 300px;
+    padding: 30px 0;
+}
+
+@media (min-wdith: 768px) {
+    width: 500px;
+}
+
+{CustomCSS}
+
+</style></head><body>
+
+
+{block:ifShowCover}
+<div id="cover">
+   
+    {block:ifnotLogoImage}
+    {block:ifShowBlogTitle}<a href="/">{Title}</a>{/block:ifShowBlogTitle}
+    {/block:ifnotLogoImage}
+
+    <p id="hello">Welcome to the LaunchPad</p>    
+
+    {block:ifShowDescription}
+    <p id="description">{description}</p>
+    {block:ifShowDescription} 
+
+    {block:ifLogoImage}
+        <a href="/"><img src="{image:Logo}" alt=""></a> 
+    </div>{block:ifLogoImage}
+    
+</div>
+{/block:ifShowCover}
+
+<div class="container">
+<aside>
+
+    {block:ifShowSidebar}
+{block:indexpage}
+<div id="sidebar">
+    <center style="display: table; width: 100%; padding:15px 0;">
+        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">85</span><br/>apprentices</p>
+        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">90%</span><br/>placement</p>
+        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">10x</span><br/>salary</p>
+    </center>
+{block:ifSidebarimage}
+<img src="{image:Sidebar}" alt="{title}" style="width:100%; margin:0px 0px 10px 0px;"/>
+{/block:ifSidebarimage}
+
+<div id="social-icons"><center>
+{block:ifnotBlackSocialIcons}
+{block:ifShowFacebookIcon}
+<a href="{text:Facebook link}">
+<img src="http://static.tumblr.com/ek9ly4s/4OXmywly6/facebook-xxl.png" alt="" title="Facebook"/></a>
+{/block:ifShowFacebookIcon}
+{block:ifShowTwitterIcon}
+<a href="{text:Twitter link}">      
+<img src="http://static.tumblr.com/ek9ly4s/u8Kmywlyj/twitter-xxl.png" alt="" title="Twitter"/></a>
+{/block:ifShowTwitterIcon}
+{block:ifShowInstagramIcon}
+<a href="{text:Instagram link}"> 
+<img src="http://static.tumblr.com/ek9ly4s/TiYmywlyv/instagram-xxl.png" alt="" title="Instagram"/></a>
+{/block:ifShowInstagramIcon}
+{block:ifShowGooglePlusIcon}
+<a href="{text:Google Plus link}">        
+<img src="http://static.tumblr.com/ek9ly4s/L9Zmywlz7/google-plus-xxl.png" alt="" title="Google+"/></a>
+{/block:ifShowGooglePlusIcon}
+{block:ifShowPinterestIcon}
+<a href="{text:Pinterest link}">         
+<img src="http://static.tumblr.com/ek9ly4s/xrCmywlzi/pinterest-3-xxl.png" alt="" title="Pinterest"/></a>
+{/block:ifShowPinterestIcon}
+{block:ifShowSkypeIcon}
+<a href="{text:Skype link}">                   
+<img src="http://static.tumblr.com/ek9ly4s/N8smywlzv/skype-xxl.png" alt="" title="Skype"/></a>
+{block:ifShowSkypeIcon}
+{block:ifShowYoutubeIcon}
+<a href="{text:Youtube link}">                        
+<img src="http://static.tumblr.com/ek9ly4s/f7kmywm05/youtube-xxl.png" alt="" title="YouTube"/></a>
+{/block:ifShowYoutubeIcon}
+{block:ifShowMessageIcon}
+<a href="/ask">                      
+<img src="http://static.tumblr.com/ek9ly4s/4ismywm0h/email-xxl.png" alt="" title="{AskLabel}"/></a>
+{/block:ifShowMessageIcon}
+{/block:ifnotBlackSocialIcons}
+<!-- WHITE GOES BLACK  -->
+{block:ifBlackSocialIcons}   
+{block:ifShowFacebookIcon}
+<a href="{text:Facebook link}">
+<img src="http://static.tumblr.com/ek9ly4s/maWmywm6i/black-facebook.png" alt="" title="Facebook"/></a>
+{/block:ifShowFacebookIcon}
+{block:ifShowTwitterIcon}
+<a href="{text:Twitter link}">      
+<img src="http://static.tumblr.com/ek9ly4s/G9omywm6x/twitter-xxl.png" alt="" title="Twitter"/></a>
+{/block:ifShowTwitterIcon}
+{block:ifShowInstagramIcon}
+<a href="{text:Instagram link}"> 
+<img src="http://static.tumblr.com/ek9ly4s/aI5mywm7o/instagram-xxl.png" alt="" title="Instagram"/></a>
+{/block:ifShowInstagramIcon}
+{block:ifShowGooglePlusIcon}
+<a href="{text:Google Plus link}">        
+<img src="http://static.tumblr.com/ek9ly4s/03Dmywm88/black-google-plus-xxl.png" alt="" title="Google+"/></a>
+{/block:ifShowGooglePlusIcon}
+{block:ifShowPinterestIcon}
+<a href="{text:Pinterest link}">         
+<img src="http://static.tumblr.com/ek9ly4s/N8Qmywm8l/pinterest-3-xxl.png" alt="" title="Pinterest"/></a>
+{/block:ifShowPinterestIcon}
+{block:ifShowSkypeIcon}
+<a href="{text:Skype link}">                   
+<img src="http://static.tumblr.com/ek9ly4s/XMimywm90/skype-xxl.png" alt="" title="Skype"/></a>
+{block:ifShowSkypeIcon}
+{block:ifShowYoutubeIcon}
+<a href="{text:Youtube link}">                        
+<img src="http://static.tumblr.com/ek9ly4s/xZdmywm9p/youtube-xxl.png" alt="" title="YouTube"/></a>
+{/block:ifShowYoutubeIcon}
+{block:ifShowMessageIcon}
+<a href="/ask">                      
+<img src="http://static.tumblr.com/ek9ly4s/eL7mywma4/email-xxl.png" alt="" title="{AskLabel}"/></a>
+{/block:ifShowMessageIcon}
+{block:ifBlackSocialIcons}   
+ </div></center></div>
+{/block:indexpage}
+{/block:ifShowSidebar}
+</aside>
+
+
+
+<div id="content" data-masonry-options='{ "isOriginLeft": false }'>
+
+
+
+{block:Posts}
+<div class = "autopagerize_page_element" >
+<div class="entry">
+{block:Photo}
+{block:IndexPage}
+<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoUrl-250}" alt="{PhotoAlt}"/></a>{LinkCloseTag}</div>
+{block:ifShowPhotoCaptions}
+{block:Caption}<div class="photo_caption">{Caption}</div>{/block:Caption}
+{/block:ifShowPhotoCaptions}
+{/block:IndexPage}
+{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"width=500px/>{LinkCloseTag}
+{/block:PermalinkPage}
+{block:IndexPage}{block:ifshowphotopermalinks}
+<div class="gradient"></div>
+<div class="xpermanote"><a href="{Permalink}">{NoteCountwithLabel}</a></div>
+<ul class="like_and_reblog_buttons">
+<li>{ReblogButton color="white" size=17}</li>
+<li>{LikeButton color="white" size=17}</li>
+</ul>{/block:ifshowphotopermalinks}
+{/block:IndexPage}
+{/block:Photo}
+
+{block:Photoset}
+<center>
+<div class="photoset">
+{block:IndexPage}{Photoset-250}<a href="{Permalink}">
+{Block:ifshowphotocaptions}{block:Caption}<div class="photo_caption">{Caption}</div>{/block:Caption}{/Block:ifshowphotocaptions}
+{block:IndexPage}
+{block:ifshowphotopermalinks}
+<div class="gradient"></div>
+<div class="xpermanote"><a href="{Permalink}">{NoteCountwithLabel}</a></div>
+<ul class="like_and_reblog_buttons">
+<li>{ReblogButton color="white" size=17}</li>
+<li>{LikeButton color="white" size=17}</li>
+</ul>{/block:ifshowphotopermalinks}
+{block:ifnotshowphotopermalinks}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul>{/block:ifnotshowphotopermalinks}{/block:IndexPage}
+{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
+</center>
+{/block:Photoset}
+
+{block:Text}
+<div class="text"><div class="xtext">
+<span class="title">{Title}</span>
+<hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;"/>
+{Body}
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+</div></div>
+{/block:Text}
+
+{block:Link}
+<div class="text">
+<div class="xlink">
+<a href="{URL}"><span class="title">{Name} <b>&rarr;</b></span></a>
+{block:Description}
+<div style="margin-top:8px;">
+<div class="caption">{Description}</div>{/block:Description}
+</div></div>
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+</div>
+{block:Link}
+
+{block:Quote}
+<div class="text">
+<div class="xquote">
+{Quote}</span></div>
+{block:Source}
+<div style="margin-top:5px;margin-left:3px;">
+<strong>- {Source}</strong></div>{/block:Source}
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+
+</div>
+{/block:Quote}
+
+{block:Chat}
+<div class="chat">
+{block:Title}
+<a href="{Permalink}">
+<div class="title">{Title}</div></a>
+{/block:Title}
+<ul id="chat">
+{block:Lines}
+<li class="{Alt} user_{UserNumber}">
+{block:Label}
+<span class="label">{Label}</span>
+{/block:Label}
+{Line}
+</li>
+{/block:Lines}
+</ul>
+</div>
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+{/block:Chat}
+
+{block:Audio}
+<div class="audio">
+{block:AlbumArt}{block:indexpage}<a href="{Permalink}">{/block:indexpage}<img src="{AlbumArtURL}" alt="{PhotoAlt}" style="{block:indexpage}width:250px;{/block:indexpage}{block:permalinkpage}width:500px;height:500px;{/block:permalinkpage}"/>{/block:AlbumArt}
+<center>
+<div style="padding:10px;">{AudioPlayerBlack}</div>
+{block:Caption}{Caption}{/block:Caption}
+</div></center>
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+{/block:Audio}
+
+{block:Answer}
+<div class="text"><div class="xtext">
+<div style="display:block:"><b>{Question} </b></div>
+<div style="padding-top:10px;">{Answer} </div>
+<br><i>asked by {Asker}</i>
+{block:IndexPage}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+</div></div>{/block:Answer}
+
+{block:Video}
+{block:IndexPage}
+<div class="video">
+<center>{Video-250}</center>
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+<ul class="textbuttons">
+<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
+<li>{ReblogButton color="gray" size=17}</li>
+<li>{LikeButton color="gray" size=17}</li>
+</ul><br>
+{/block:IndexPage}
+{block:PermalinkPage}
+<center>{Video-500}</center>
+{/block:PermalinkPage}
+{block:Video}
+
+{block:PermalinkPage}
+<div style="display:block;margin-top:10px;">
+{block:NoteCount}This {PostType}{block:Photoset}set{/block:Photoset} {block:Text}post {/block:Text}{block:chat}post {block:chat}{block:Audio}file {/block:Audio}with {NoteCountWithLabel}{/block:NoteCount}{block:Date}  was posted {TimeAgo} on the {DayOfMonth}{DayOfMonthSuffix} of {Month}, {Year}. {/block:Date} </div>
+<div style="display:block;margin-top:10px;">
+{block:RebloggedFrom}Reblogged from: <a href="{ReblogParentURL}" title="Check out {ReblogParentName}'s blog I reblogged this {PostType} {block:Text}post {/block:Text}{block:chat}post {block:chat}{block:Audio}file {/block:Audio}from them." target="_blank">{ReblogParentName}</a>
+<br>Posted by: <a href="{ReblogRootParentURL}" title="Just incase you were wondering {ReblogRootName} originally posted this {PostType}{block:Text} post{/block:Text}{block:chat} post{block:chat}{block:Audio} file{/block:Audio}." target="_blank">{ReblogRootName}</a><br>
+{/block:RebloggedFrom}
+{block:HasTags}
+Tags:{block:Tags} <a href="{TagURL}" title="View more posts on my blog tagged '{Tag}'.">#{Tag}</a>{/block:Tags}<br>{/block:hasTags}
+{block:Caption}<div style="margin-top:10px;">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
+
+{block:PostNotes}
+<div style="width:500px;height:250px;overflow-y:scroll;overflow-x:hidden;margin-left:-5px;margin-top:10px;">{PostNotes}</div>
+{/block:PostNotes}
+</div>
+</div>
+{/block:Posts}
+
+</div></div>
+</div>
+
+{block:IndexPage}
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/dbek3sy/iBElrgjim/jquerymasonry.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/dbek3sy/Qyblrgjfn/jqueryinfintescroll.js"></script>
+<script type="text/javascript">
+$(window).load(function () {
+    var $content = $('#content');
+    $content.masonry({
+        itemSelector: '.entry, .sidebar',
+        stamp: ".stamp"
+    }),
+
+    $content.infinitescroll({
+        navSelector : 'div#pagination',
+        nextSelector : 'div#pagination a#nextPage',
+        itemSelector : '.entry',
+        loading: {
+            finishedMsg: '',
+            img: ''
+            },
+        bufferPx : 600,
+        debug : false,
+    },
+    // call masonry as a callback.
+    function( newElements ) {
+        window.n = window.n || 0;
+        Tumblr.LikeButton.get_status_by_page(++window.n);
+        var $newElems = $( newElements );
+        $newElems.hide();
+        // ensure that images load before adding to masonry layout
+        $newElems.imagesLoaded(function(){
+            $content.masonry( 'appended', $newElems, true, function(){$newElems.fadeIn(300);} );
+        });
+    
+    });
+
+});
+</script>
+{/block:IndexPage}
+
+
+{block:IndexPage}
+{block:Pagination}
+<div id="pagination">
+{block:NextPage}
+<a id="nextPage" href="{NextPage}"></a>
+{/block:NextPage}
+{block:PreviousPage}
+<a href="{PreviousPage}"></a>
+{/block:PreviousPage}
+</div>
+{/block:Pagination}
+{/block:IndexPage}
+
+<script type="text/javascript" src="http://static.tumblr.com/3zmswwt/Opemwnkmq/scripts.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/3zmswwt/HNCmwoa0e/addons.js"></script>
+
+</body></html><!-- END OF THEME -->
