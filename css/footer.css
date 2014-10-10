@@ -1,0 +1,380 @@
+#footer {
+  background: #344a5f;
+  color: #547899;
+
+  width: 100%;
+  height: auto;
+}
+
+#footer h6 {
+  text-transform: uppercase;
+  color: #547899;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Nexa";
+}
+
+#footer > .container {
+  margin-top: 20px;
+}
+
+#footer .primary-link {
+  color: #5c93ce;
+  font-family: "Nexa";
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+#footer article p {
+  display: block;
+}
+
+#footer h6 {
+  padding-top: 8%;
+  margin-bottom: 6%;
+}
+
+#footer #footer-content-left {
+  padding-top: 5%;
+}
+
+#footer #footer-content-left .footer-faq {
+  font-size: .929em;
+  padding-left: 7%;
+  font-weight: 200;
+}
+
+#footer #footer-content-left .footer-faq p {
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+
+#footer #footer-content-left .footer-faq .col-xs-4 {
+  padding-left: 0;
+  text-align: center;
+}
+
+#footer #footer-divider {
+  border-right: 1px solid #547899;
+}
+
+#footer #footer-divider p {
+    line-height: 2em;
+}
+
+#footer #footer-divider #footer-divider-last {
+  margin-bottom: 0px;
+}
+
+#footer #footer-content-middle {
+  border-left: 1px solid #547899;
+  border-right: 1px solid #547899;
+  /* 
+   * adjust for footer height
+   **/
+  padding-bottom: 3%;
+}
+
+#footer #footer-content-middle p {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  font-size: .929em;
+  padding-left: 15%;
+}
+
+#footer #footer-content-middle .fa-envelope, #footer #footer-content-middle .fa-newspaper-o {
+  display: inline-block;
+  text-align: center;
+  color: #5c93ce;
+  font-size: 23px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  height: 30px;
+}
+
+#footer #footer-content-middle .fa-envelope:before, #footer #footer-content-middle .fa-newspaper-o:before {
+  position: relative;
+  top: 17%;
+}
+
+#footer #footer-content-middle .fa-newspaper-o {
+  margin-left: -12px;
+}
+
+#footer #footer-content-middle a {
+  font-weight: 200;
+  font-size: .929em;
+}
+
+#footer #footer-content-middle h6 {
+  padding-top: 11%;
+  margin-bottom: 2%;
+}
+
+#footer #footer-content-right {
+  /* sponsors */
+  /* arrows */
+}
+
+#footer #footer-content-right p a {
+  display: block;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-top: 3.6%;
+}
+@media screen and (max-width: 768px) {
+
+  #footer #footer-content-right p {
+    margin: 15px;
+  }
+}
+
+#footer #footer-content-right h6 {
+  margin-bottom: 27px;
+}
+
+#footer #footer-content-right a {
+  background: url();
+}
+
+#footer #footer-content-right a.left {
+  width: 21%;
+}
+
+#footer #footer-content-right a.right {
+  width: 37%;
+}
+
+#footer #footer-content-right .btn-arrow-left, #footer #footer-content-right .btn-arrow-right {
+  top: 78%;
+}
+
+#footer #footer-bottom {
+  border-top: 1px solid #547899;
+  padding: 1.5%;
+  padding-bottom: 1.2%;
+  font-size: 10px;
+}
+
+#footer #copyright, #footer #terms {
+  margin-bottom: 0px;
+}
+
+#footer #copyright {
+  font-family: "Nexa";
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 0px;
+}
+
+#footer #terms {
+  text-align: right;
+  padding-left: 0px;
+}
+@media screen and (max-width: 767px) {
+
+  #footer #footer-content-middle {
+    padding-top: 5%;
+    margin: 15px auto;
+  }
+  
+  #footer #footer-content-middle h6 {
+    display: none;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #footer .fa-envelope {
+    margin-bottom: 30px;
+  }
+  
+  #footer .fa-newspaper-o {
+    margin-bottom: 15px;
+  }
+  
+  #footer #footer-divider {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #footer #footer-divider {
+    border-right: none;
+    margin: 20px 0px;
+  }
+  
+  #footer #footer-divider p {
+    display: inline-block;
+    margin-left: 7.89%;
+    margin-right: 7.89%;
+  }
+  
+  #footer .footer-faq {
+    padding-left: 0px;
+  }
+  
+  #footer .footer-faq .col-xs-4 {
+    padding-right: 0px;
+  }
+  
+  #footer #footer-content-left .footer-faq {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  #footer #footer-content-middle {
+    border-left: none;
+  }
+}
+@media screen and (max-width: 995px) {
+
+  #footer #footer-content-right {
+    display: none;
+  }
+
+  #footer #footer-content-middle {
+    border-right: none;
+  }
+
+  #footer #copyright, #footer #terms {
+    display: inline;
+  }
+
+  #footer #copyright {
+    float: left;
+  }
+
+  #footer #terms {
+    float: right;
+  }
+}
+
+/* ******************************************
+  Animation
+****************************************** */
+/* sponsor carousel transition effect */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+/* ******************************************
+  Subscription Modal
+****************************************** */
+
+#mc_embed_signup {
+  clear: left;
+}
+
+
+#mc_embed_signup .indicates-required {
+  text-align: right;
+  font-size: 11px;
+  margin-right: 4%;
+}
+
+
+#mc_embed_signup .mc-field-group label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: #547899;
+  color: white;
+}
+
+
+#mc_embed_signup .mc-field-group {
+  clear: left;
+  position: relative;
+  width: 96%;
+  padding-bottom: 3%;
+  min-height: 50px;
+}
+
+
+#mc_embed_signup .mc-field-group .asterisk {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+
+#mc_embed_signup .asterisk {
+  color: #c60;
+  font-size: 200%;
+}
+
+
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+}
+
+
+#mc_embed_signup input {
+  border: 1px solid #999;
+  -webkit-appearance: none;
+}
+
+
+#mc_embed_signup .clear {
+  clear: both;
+}
+
+
+#mc_embed_signup .button {
+  clear: both;
+  background-color: #aaa;
+  border: 0 none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+}

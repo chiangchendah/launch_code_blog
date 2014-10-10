@@ -1,746 +1,344 @@
 <!DOCTYPE html>
-
- <!--
-	
-	theme three beta version 1.0
-	by homemade themes & themesbyjames, created january 2013.
-
-	http://themesbyjames.tumblr.com 
-	http://homemadethemes.tumblr.com
-	
-    	for cover photo images go to
-	http://homemadethemes.tumblr.com/cover-images/
-	
-  -->
-
-<html><head>
+<html>
+<head>
 
 <title>LaunchPad</title>
-{block:Description}
-<meta name="description" content="{MetaDescription}" />
-{/block:Description}
-<link rel="shortcut icon" href="{Favicon}">
-<meta http-equiv="X-UA-Compatiblebl" content="IE=edge,chrome=1">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
-<meta name="viewport" content="width=1220" />
-<meta name="color:Background" content="#EBEBEB" />
-<meta name="color:Center Background" content="#FFFFFF" />
-<meta name="color:Social Icons Background" content="#CCCCCC" />
-<meta name="color:Feature Color" content="#000000" />
-<meta name="color:Text" content="#000000" />
-<meta name="color:Blog Title" content="#FFFFFF" />
-<meta name="color:Link" content="#333333"/>
-<meta name="color:Link Hover" content="#292929" />
-<meta name="image:Cover Photo" content="" />
-<meta name="image:Logo" content="" />
-<meta name="image:Background" content="" />
-<meta name="image:Sidebar" content="" />
-<meta name="Body font" content="Helvetica Neue">
- 
-<meta name="if:Show Cover" content="1"/>
-<meta name="if:Show Sidebar" content="1"/>
-<meta name="if:Rounded Photos" content="0"/>
-<meta name="if:Show Blog Title" content="1"/>
-<meta name="if:Show Description" content="1"/>
-<meta name="if:Show Photo Permalinks" content="1"/>
-<meta name="if:Show Photo Captions" content="0"/>
-<meta name="if:Black Social Icons" content="0"/>
 
-<meta name="if:Show Facebook Icon" content="0"/>
-<meta name="if:Show Twitter Icon" content="0"/>
-<meta name="if:Show Instagram Icon" content="0"/>
-<meta name="if:Show Google Plus Icon" content="0"/>
-<meta name="if:Show Pinterest Icon" content="0"/>
-<meta name="if:Show Skype Icon" content="0"/>
-<meta name="if:Show Youtube Icon" content="0"/>
-<meta name="if:Show Message Icon" content="0"/>
+<meta name="description" content="Here you'll find stories, ideas, and the collective genius of LaunchCoders embarking on the journey towards their dream job.">
 
-<meta name="text:Ask Title" content="Message" />
-<meta name="text:Facebook link" content="http://"/>
-<meta name="text:Twitter Link" content="http://"/>
-<meta name="text:Instagram Link"  content="http://"/>
-<meta name="text:Google Plus Link"  content="http://"/>
-<meta name="text:Pinterest Link"  content="http://"/>
-<meta name="text:Skype Link" content="http://"/>
-<meta name="text:Youtube Link"  content="http://"/>
-<meta name="text:Text Online User Counter" content="" />
-<meta name="text:Link One" content="" />
-<meta name="text:Link One Title" content="" />
-<meta name="text:Link Two" content=""/>
-<meta name="text:Link Two Title" content="" />
-<meta name="text:Link Three" content="" />
-<meta name="text:Link Three Title" content="" />
-<meta name="text:Link Four" content="" />
-<meta name="text:Link Four Title" content="" />
-<meta name="text:Link Five" content="" />
-<meta name="text:Link Five Title" content="" />
-<meta name="text:Link Six" content="" />
-<meta name="text:Link Six Title" content="" />
-<meta name="text:Text Online User Counter" content="" />
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
 
-<link href="http://static.tumblr.com/ek9ly4s/dVwmzbmv7/homemadebyjames.css" rel="stylesheet">
+</head><body>
 
-<script type="text/javascript" src="http://static.tumblr.com/ek9ly4s/ZPLmx9glq/jquery-latest-homemadethemes.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/ek9ly4s/ts7mxbkbc/infinite-scroll.js"></script>
+<!-- launchcode navbar -->
 
-<style type="text/css">
+<nav class="navbar navbar-default navbar-static-top" role="navigation"><!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="nav-brand dabomb"></a>
+      </div>
 
-@font-face {font-family: 'Nexa'; src: url('http://static.tumblr.com/whgtjbt/CBana5ppp/nexa-xbold.otf') format('opentype'); }  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav">
+          <li class="divider hidden-xs"></li>
+          <li><a href="launchcode.org/apply" class="primary-link">Apply</a></li>
+          <li><a href="launchcode.org/hire" class="primary-link">Hire</a></li>
+          <li><a href="launchcode.org/learn" class="primary-link">Learn</a></li>
+          <li class="divider hidden-xs"></li>
+          <li><a href="launchcode.org/about" class="navbar-content">About</a></li>
+          <li><a href="launchcode.org/donate" class="navbar-content">Donate</a></li>
+          <li><a href="https://squareup.com/market/launchcode" class="navbar-content">Shop</a></li>
+          <li class="divider hidden-xs"></li>
+          <li class="social first cloak"><a href="https://www.facebook.com/launchcodestl" class="fa fa-facebook"></a></li>
+          <li class="social cloak"><a href="https://twitter.com/LaunchCodeSTL" class="fa fa-twitter"></a></li>
+          <li class="divider hidden-xs cloak"></li>
+        </ul>
 
-@font-face {font-family: 'Caecilia'; src: url('http://static.tumblr.com/whgtjbt/Syuna5o3x/caecilialtstd-light.otf') format('opentype'); }
+        <ul class="nav navbar-nav navbar-right registration">
+          <li><a href="launchcode.org/register" class="primary-link">Register</a></li>
+          <li class="separator hidden-xs"><p class="navbar-text">/</p></li>
+          <li><a href="launchcode.org/log_in" class="primary-link">Log In</a></li>
+        </ul>
 
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
+<!-- Landing Image -->
 
-html{
-    height:103%;}
-
-body, p {
-    font-family: Caecilia,  Helvetica, Arial, sans-serif;
-    font-style: normal;
-	font-size: 12px;
-	padding: 0px;
-	margin: 0px;
-}
- 
-body {
-	background-color:{color:background};
-	background-image:url({image:Background});
-	background-attachment: fixed;
-	background-repeat: repeat;
-    color: #344a5f;
-}
-
-
-a {
-	text-decoration:none;
-	color: #5c93ce;
-	-webkit-transition: all 0.4s linear;
-	-moz-transition: all 0.4s linear;
-	transition: all 0.4s linear;}
-	
-a:link, a:active, a:visited{
-	color: {color:Link};
-	text-decoration: none;
-	-webkit-transition: all 0.6s ease-out;
-	-moz-transition: all 0.6s ease-out;
-	-o-transition: all   0.6s ease-out;transition: all 0.6s ease-out;}
- 
-a:hover{
-	color:{color:link hover};}
- 
-
-
-{block:indexpage}
-.photo{
-    width:250px;
-    height:auto;}
-{/block:indexpage}
-
-.photo img{
-	{block:indexpage}width:250px;{/block:indexpage}
-	-webkit-transition: 0.3s ease-in;}
-
- #chat li{
-     padding:7px 10px;
-     border-bottom:2px solid {color:feature color};}
-
-blockquote{
-    margin:5px 0;
-    border-left:2px solid{color:Text};
-    padding-left:10px}
-	
-
-
-#navigation a:hover{
-    background:{color:feature color};
-    color: #ffffff;
-    -webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	transition: all 0.2s linear;}
-	
-::-webkit-input-placeholder{
-    color:#555555;font:15px "Source Sans Pro", san-serif}
-:-moz-placeholder{
-    color:#555555;font-size:15px "Source Sans Pro", san-serif}
-::-moz-placeholder{
-    color:#555555;
-    font-size:15px "Source Sans Pro", san-serif}
-    :-ms-input-placeholder{
-    color:#555555;
-    font-size:15px "Source Sans Pro", san-serif}
-
-#sidebar{
-    {block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedPhotos}
-    background-color:{color:Center Background};
-    width:250px;
-    float:left;
-	padding:5px 5px 5px 5px;
-	margin:25px 25px 20px 25px;
-	{block:PermalinkPage}
-	display:none;
-	visibility:hidden;
-	{block:PermalinkPage}
-	height:auto;}
-
-.sidebar img{
-    {block:ifRoundedPhotos}border-radius:3px;{/block:ifroundedPhotos}}
-
-#social-icons img{
-    height:26px;
-    width:26px;
-    margin-right:5px;
-    margin-bottom:5px; 
-    border-radius:32px;
-    border:4px solid {color:Social Icons Background};
-    background-color:{color:Social Icons Background};
-    -webkit-transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	transition: all 0.3s linear}
-	
-.xpermanote a{
-    font-size:11px;
-    font-family:pt sans;
-    line-height:24px;
-    text-transform:uppercase;
-    color:white;
-    font-style:bold;}
-
-.xlink{
-    margin-left:-5px;
-    margin-top:-5px;
-    padding:10px;
-    {block:indexpage}
-    width:240px;
-    border-top:13px solid {color:feature color};
-    {/block:indexpage}
-    font-size:20px;
-    margin-bottom:-5px;}
-    
-.xquote{
-    margin-left:-5px;
-    margin-top:-5px;
-    padding:10px;
-    {block:indexpage}
-    width:240px;
-    border-top:13px solid {color:feature color};
-    {/block:indexpage}
-    font-size:20px;
-    margin-bottom:-5px;}   
-
-
-
-.entry{
-    {block:ifRoundedPhotos}border-radius:5px;{/block:ifroundedPhotos}
-    background-color:{color:Center Background};
- 	margin:25px;
-	margin-bottom:30px;	
-	padding:5px 5px 2px 5px;
-	float:left;
-	height:auto;
-	{block:IndexPage}overflow:hidden;width:300px;{/block:IndexPage}
-	{block:PermalinkPage}width:500px;height:auto;{/block:PermalinkPage}
-    -moz-box-shadow:    0 0 11px 3px #ccc;
-    -webkit-box-shadow: 0 0 11px 3px #ccc;
-    box-shadow:         0 0 11px 3px #ccc;
-}
-
-.entry img{
-    {block:ifRoundedPhotos}border-radius:3px;{/block:ifroundedPhotos}
-    {block:IndexPage}width:230px;{/block:IndexPage}}   
- 
-    
-#cover{
-    background:url("{image:cover photo}") no-repeat center;
-    background-size:cover;
-    background-color:{color:feature color};}
-
-#cover #cover-overlay{background-color:{color:feature color};}
-
-#cover{
-    position:relative;
-    width:100%;
-    height:300px;
-    text-align:center;
-    font-weight:bold;
-    font-size:20px;
-    letter-spacing:3px;
-    color:{color:feature color};}
-
-#cover a{
-    font-family: Nexa, Helvetica, Arial, sans-serif;
-    border-radius:0px;
-    line-height:150px;
-    text-transform: uppercase;
-    font-weight:400;
-    padding:15px 10px 10px 15px;
-    {block:ifnotLogoImage}
-    border: 2px solid #5c93ce;
-    {/block:ifnotLogoImage}
-    color:{color:blog title};}
-
-#description{
-    text-align:center;
-    margin:10px 20% 0px 20%;
-    padding:10px 30px 0px 30px;
-    font-size: 13px;
-    color: white;
-    font-family: Caecilia, Helvetica, Arial, sans-serif;
-}
-
-#hello {
-    font-size: 30px;
-    font-family: Caecilia, Helvetica, Arial, sans-serif;
-    color:white;
-}
-
-#content{
-	margin: 0 auto;
-	position:relative;
-	padding-bottom:10px;
-	{block:IndexPage}width:100%;{/block:IndexPage}
-	{block:PermalinkPage}width:500px;{/block:PermalinkPage}
-    display: table-cell;
-}
-
-
-
-aside {
-    display:table-cell;
-    width:200px;
-    
-}
-
-.container {
-    display:table;
-}
-
-.row {
-    display:table-row;
-}
-
-@media (max-wdith: 400px) {
-    aside {
-        display: block;
-    }
-    .container {
-        display: block;
-    }
-}
-
-
-.xtext{
-    margin-left:-5px;
-    margin-top:-5px;
-    padding:30px;
-    {block:indexpage}
-    width:240px;
-    {/block:indexpage}
-    margin-bottom:-5px;
-    
-}    
-
-.xtext p {
-    line-height:2em;
-}
-   
-
-.title {
-    display: block;
-    font-size: 20px;
-    letter-spacing:2px;
-    padding: 10px 0;
-    font-weight:bold;
-}
-    
-.read_more_container {
-    font-family: Nexa, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin:10px auto;
-    
-}
-
-.read_more_container a {
-    color: #5c93ce;
-}
-
-.video {
-    width: 300px;
-    padding: 30px 0;
-}
-
-@media (min-wdith: 768px) {
-    width: 500px;
-}
-
-{CustomCSS}
-
-</style></head><body>
-
-
-{block:ifShowCover}
-<div id="cover">
-   
-    {block:ifnotLogoImage}
-    {block:ifShowBlogTitle}<a href="/">{Title}</a>{/block:ifShowBlogTitle}
-    {/block:ifnotLogoImage}
-
+<section id="cover">
+    <h4>Blog</h4>
     <p id="hello">Welcome to the LaunchPad</p>    
+    <p id="description">Here you'll find stories, ideas, and the collective genius of LaunchCoders embarking on the journey towards their dream job.</p>
+</section>
 
-    {block:ifShowDescription}
-    <p id="description">{description}</p>
-    {block:ifShowDescription} 
+<!-- Data -->
 
-    {block:ifLogoImage}
-        <a href="/"><img src="{image:Logo}" alt=""></a> 
-    </div>{block:ifLogoImage}
-    
-</div>
-{/block:ifShowCover}
+<section class="container">
 
-<div class="container">
-<aside>
+    <aside id="" class="block sidebar">
+        <center style="padding:15px 0;">
+            <p style="display: inline-block; width: 100%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">85</span><br>apprentices</p>
+            <p style="display: inline-block; width: 100%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">90%</span><br>placement</p>
+            <p style="display: inline-block; width: 100%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">10x</span><br>salary</p>
+        </center>
+    </aside>
 
-    {block:ifShowSidebar}
-{block:indexpage}
-<div id="sidebar">
-    <center style="display: table; width: 100%; padding:15px 0;">
-        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">85</span><br/>apprentices</p>
-        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">90%</span><br/>placement</p>
-        <p style="display: table-cell; width: 33.33%;"><span style="color: #5c93ce; font-size: 30px; font-family: Nexa;">10x</span><br/>salary</p>
-    </center>
-{block:ifSidebarimage}
-<img src="{image:Sidebar}" alt="{title}" style="width:100%; margin:0px 0px 10px 0px;"/>
-{/block:ifSidebarimage}
+    <div id="content" class="">
 
-<div id="social-icons"><center>
-{block:ifnotBlackSocialIcons}
-{block:ifShowFacebookIcon}
-<a href="{text:Facebook link}">
-<img src="http://static.tumblr.com/ek9ly4s/4OXmywly6/facebook-xxl.png" alt="" title="Facebook"/></a>
-{/block:ifShowFacebookIcon}
-{block:ifShowTwitterIcon}
-<a href="{text:Twitter link}">      
-<img src="http://static.tumblr.com/ek9ly4s/u8Kmywlyj/twitter-xxl.png" alt="" title="Twitter"/></a>
-{/block:ifShowTwitterIcon}
-{block:ifShowInstagramIcon}
-<a href="{text:Instagram link}"> 
-<img src="http://static.tumblr.com/ek9ly4s/TiYmywlyv/instagram-xxl.png" alt="" title="Instagram"/></a>
-{/block:ifShowInstagramIcon}
-{block:ifShowGooglePlusIcon}
-<a href="{text:Google Plus link}">        
-<img src="http://static.tumblr.com/ek9ly4s/L9Zmywlz7/google-plus-xxl.png" alt="" title="Google+"/></a>
-{/block:ifShowGooglePlusIcon}
-{block:ifShowPinterestIcon}
-<a href="{text:Pinterest link}">         
-<img src="http://static.tumblr.com/ek9ly4s/xrCmywlzi/pinterest-3-xxl.png" alt="" title="Pinterest"/></a>
-{/block:ifShowPinterestIcon}
-{block:ifShowSkypeIcon}
-<a href="{text:Skype link}">                   
-<img src="http://static.tumblr.com/ek9ly4s/N8smywlzv/skype-xxl.png" alt="" title="Skype"/></a>
-{block:ifShowSkypeIcon}
-{block:ifShowYoutubeIcon}
-<a href="{text:Youtube link}">                        
-<img src="http://static.tumblr.com/ek9ly4s/f7kmywm05/youtube-xxl.png" alt="" title="YouTube"/></a>
-{/block:ifShowYoutubeIcon}
-{block:ifShowMessageIcon}
-<a href="/ask">                      
-<img src="http://static.tumblr.com/ek9ly4s/4ismywm0h/email-xxl.png" alt="" title="{AskLabel}"/></a>
-{/block:ifShowMessageIcon}
-{/block:ifnotBlackSocialIcons}
-<!-- WHITE GOES BLACK  -->
-{block:ifBlackSocialIcons}   
-{block:ifShowFacebookIcon}
-<a href="{text:Facebook link}">
-<img src="http://static.tumblr.com/ek9ly4s/maWmywm6i/black-facebook.png" alt="" title="Facebook"/></a>
-{/block:ifShowFacebookIcon}
-{block:ifShowTwitterIcon}
-<a href="{text:Twitter link}">      
-<img src="http://static.tumblr.com/ek9ly4s/G9omywm6x/twitter-xxl.png" alt="" title="Twitter"/></a>
-{/block:ifShowTwitterIcon}
-{block:ifShowInstagramIcon}
-<a href="{text:Instagram link}"> 
-<img src="http://static.tumblr.com/ek9ly4s/aI5mywm7o/instagram-xxl.png" alt="" title="Instagram"/></a>
-{/block:ifShowInstagramIcon}
-{block:ifShowGooglePlusIcon}
-<a href="{text:Google Plus link}">        
-<img src="http://static.tumblr.com/ek9ly4s/03Dmywm88/black-google-plus-xxl.png" alt="" title="Google+"/></a>
-{/block:ifShowGooglePlusIcon}
-{block:ifShowPinterestIcon}
-<a href="{text:Pinterest link}">         
-<img src="http://static.tumblr.com/ek9ly4s/N8Qmywm8l/pinterest-3-xxl.png" alt="" title="Pinterest"/></a>
-{/block:ifShowPinterestIcon}
-{block:ifShowSkypeIcon}
-<a href="{text:Skype link}">                   
-<img src="http://static.tumblr.com/ek9ly4s/XMimywm90/skype-xxl.png" alt="" title="Skype"/></a>
-{block:ifShowSkypeIcon}
-{block:ifShowYoutubeIcon}
-<a href="{text:Youtube link}">                        
-<img src="http://static.tumblr.com/ek9ly4s/xZdmywm9p/youtube-xxl.png" alt="" title="YouTube"/></a>
-{/block:ifShowYoutubeIcon}
-{block:ifShowMessageIcon}
-<a href="/ask">                      
-<img src="http://static.tumblr.com/ek9ly4s/eL7mywma4/email-xxl.png" alt="" title="{AskLabel}"/></a>
-{/block:ifShowMessageIcon}
-{block:ifBlackSocialIcons}   
- </div></center></div>
-{/block:indexpage}
-{/block:ifShowSidebar}
-</aside>
+        <div class="entry feature">
+            <div class="entry--video"><iframe src="https://www.youtube.com/embed/t5P-fdrlBg8?feature=oembed" frameborder="0" allowfullscreen=""></iframe></div>
 
+            <ul class="textbuttons">
+                <li><a href="http://launchc0de.tumblr.com/post/94444175889">0 notes</a></li>
+                <li><a href="https://www.tumblr.com/reblog/94444175889/4JQ04IiQ" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                <li><div class="like_button" data-post-id="94444175889" id="like_button_94444175889"><iframe id="like_iframe_94444175889" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94444175889&amp;color=gray&amp;rk=4JQ04IiQ" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div>
 
+        <div class="entry"><div class="entry--post">
+            <span class="title">CoderGirls Rule</span>
+            <hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;">
+            <p><span>Kale chips irony vinyl raw denim sustainable, try-hard Tumblr vegan swag. Leggings cliche yr polaroid Shoreditch, flexitarian forage squid. Jean shorts cardigan Banksy, sartorial American Apparel artisan pour-over you probably haven’t heard of them. Tofu freegan meh meggings viral messenger bag skateboard, four loko put a bird on it. Hella kale chips mustache Etsy, keytar tattooed quinoa vegan craft beer polaroid you probably haven’t heard of them yr church-key. </span></p>
+            <p><span></span></p>
+            <p class="read_more_container"><a href="http://launchc0de.tumblr.com/post/94444230529/codergirls-rule" class="read_more">Read More</a></p>
 
-<div id="content" data-masonry-options='{ "isOriginLeft": false }'>
+            <ul class="textbuttons">
+                <li><a href="http://launchc0de.tumblr.com/post/94444230529/codergirls-rule">0 notes</a></li>
+                <li><a href="https://www.tumblr.com/reblog/94444230529/aBDzzyRP" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                <li><div class="like_button" data-post-id="94444230529" id="like_button_94444230529"><iframe id="like_iframe_94444230529" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94444230529&amp;color=gray&amp;rk=aBDzzyRP" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div></div>
+
+        <div class="text entry"><div class="entry--post">
+            <span class="title">LaunchCode Taking Over the World</span>
+            <hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;">
+            <p><span>Skateboard Intelligentsia meggings, yr art party typewriter Neutra 8-bit Helvetica ethical Marfa crucifix fap hashtag. Kogi Intelligentsia cray VHS synth church-key. Tattooed slow-carb tousled Pitchfork wolf. High Life Brooklyn artisan squid, cliche typewriter literally. Chia hella asymmetrical, pug VHS DIY authentic Tumblr gluten-free Marfa mlkshk. </span></p>
+            <p><span></span></p>
+            <p class="read_more_container"><a href="http://launchc0de.tumblr.com/post/94443765349/launchcode-taking-over-the-world" class="read_more">Read More</a></p>
+
+            <ul class="textbuttons">
+                <li><a href="http://launchc0de.tumblr.com/post/94443765349/launchcode-taking-over-the-world">0 notes</a></li>
+                <li><a href="https://www.tumblr.com/reblog/94443765349/NgWRXJbP" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                <li><div class="like_button" data-post-id="94443765349" id="like_button_94443765349"><iframe id="like_iframe_94443765349" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94443765349&amp;color=gray&amp;rk=NgWRXJbP" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div></div>
+
+        <div class="entry">
+            <div class="entry--video"><iframe src="https://www.youtube.com/embed/l_wDZnypJTA?feature=oembed" frameborder="0" allowfullscreen=""></iframe></div>
+
+            <ul class="textbuttons">
+            <li><a href="http://launchc0de.tumblr.com/post/94443646139">0 notes</a></li>
+            <li><a href="https://www.tumblr.com/reblog/94443646139/VU5joY8X" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+            <li><div class="like_button" data-post-id="94443646139" id="like_button_94443646139"><iframe id="like_iframe_94443646139" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94443646139&amp;color=gray&amp;rk=VU5joY8X" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div>
+
+        <div class="text entry"><div class="entry--post">
+            <span class="title">FEATURED LAUNCHCODER</span>
+            <hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;">
+
+            <p><img alt="image" src="https://31.media.tumblr.com/bd89558ccaaa313dbc349fb887ff3818/tumblr_inline_na5hhuxWVG1qg1bdh.jpg"></p>
+
+            <p><strong>Terrence Bowen</strong></p>
+            <p>Past: FedEx Team Member</p>
+            <p>Current: Developer at Centene</p>
+            <p></p>
+            <p class="read_more_container"><a href="http://launchc0de.tumblr.com/post/94443372269/featured-launchcoder" class="read_more">Read More</a></p>
+
+            <ul class="textbuttons">
+                <li><a href="http://launchc0de.tumblr.com/post/94443372269/featured-launchcoder">0 notes</a></li>
+                <li><a href="https://www.tumblr.com/reblog/94443372269/RSpAATsS" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                <li><div class="like_button" data-post-id="94443372269" id="like_button_94443372269"><iframe id="like_iframe_94443372269" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94443372269&amp;color=gray&amp;rk=RSpAATsS" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div></div>
+
+        <div class="text entry"><div class="entry--post">
+            <span class="title">EVENTS</span>
+            <hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;">
+            <ol><li><span>CoderGirl Meetup<br><br>Thursday 7/14, St. Louis Science Center<br><br></span></li>
+            <li><span>Project Fair<br><br>Thursday 7/14, 7912 Bonhomme Ave&nbsp;<br><br></span></li>
+            <li><span>Alumni Meet &amp; Greet<br><br>Thursday 7/14, 360 Glass Factory</span></li>
+            </ol>
+
+            <ul class="textbuttons">
+                <li><a href="http://launchc0de.tumblr.com/post/94443197779/events">0 notes</a></li>
+                <li><a href="https://www.tumblr.com/reblog/94443197779/JINONsM8" class="reblog_button" style="display: block;width:17px;height:17px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                <li><div class="like_button" data-post-id="94443197779" id="like_button_94443197779"><iframe id="like_iframe_94443197779" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=931e9b3b56df72f83a7a9186e61a02d6#name=launchc0de&amp;post_id=94443197779&amp;color=gray&amp;rk=JINONsM8" scrolling="no" width="17" height="17" frameborder="0" class="like_toggle" allowtransparency="true"></iframe></div></li>
+            </ul><br>
+        </div></div>
+
+    </div>
+
+</section>
 
 
+<div id="footer">
+  <div class="container-fluid">
+    <div class="row">
 
-{block:Posts}
-<div class = "autopagerize_page_element" >
-<div class="entry">
-{block:Photo}
-{block:IndexPage}
-<div class="photo">{LinkOpenTag}<a href="{Permalink}"><img src="{PhotoUrl-250}" alt="{PhotoAlt}"/></a>{LinkCloseTag}</div>
-{block:ifShowPhotoCaptions}
-{block:Caption}<div class="photo_caption">{Caption}</div>{/block:Caption}
-{/block:ifShowPhotoCaptions}
-{/block:IndexPage}
-{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"width=500px/>{LinkCloseTag}
-{/block:PermalinkPage}
-{block:IndexPage}{block:ifshowphotopermalinks}
-<div class="gradient"></div>
-<div class="xpermanote"><a href="{Permalink}">{NoteCountwithLabel}</a></div>
-<ul class="like_and_reblog_buttons">
-<li>{ReblogButton color="white" size=17}</li>
-<li>{LikeButton color="white" size=17}</li>
-</ul>{/block:ifshowphotopermalinks}
-{/block:IndexPage}
-{/block:Photo}
+      <article id="footer-content-left" class="col-xs-12 col-sm-8 col-md-5">
+      
+        <div id="footer-divider" class="col-xs-12 col-sm-3 col-sm-offset-1">
+          <p><a href="launchcode.org/apple" class="primary-link">Apply</a></p>
+          <p><a href="launchcode.org/hire" class="primary-link">Hire</a></p>
+          <p id="footer-divider-last"><a href="launchcode.org/learn" class="primary-link">Learn</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-8 footer-faq">
+          <div class="col-xs-4">
+            <p><a href="launchcode.org/about">About</a></p>
+            <p><a href="launchcode.org/coder_girl">CoderGirl</a></p>
+            <p><a href="launchcode.org/community">Community</a></p>
+          </div>
+           <div class="col-xs-4">
+            
+            <p><a href="launchcode.org/donate">Donate</a></p>
+            <p><a href="launchcode.org/jobs">Jobs</a></p>
+            <p><a href="launchcode.org/partners">Partners</a></p>
+          </div>
+          <div class="col-xs-4">
+            <p><a href="launchcode.org/resources">Resources</a></p>
+            <p><a href="https://squareup.com/market/launchcode">Shop</a></p>
+          </div>
+        </div>
+      </article>
 
-{block:Photoset}
-<center>
-<div class="photoset">
-{block:IndexPage}{Photoset-250}<a href="{Permalink}">
-{Block:ifshowphotocaptions}{block:Caption}<div class="photo_caption">{Caption}</div>{/block:Caption}{/Block:ifshowphotocaptions}
-{block:IndexPage}
-{block:ifshowphotopermalinks}
-<div class="gradient"></div>
-<div class="xpermanote"><a href="{Permalink}">{NoteCountwithLabel}</a></div>
-<ul class="like_and_reblog_buttons">
-<li>{ReblogButton color="white" size=17}</li>
-<li>{LikeButton color="white" size=17}</li>
-</ul>{/block:ifshowphotopermalinks}
-{block:ifnotshowphotopermalinks}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul>{/block:ifnotshowphotopermalinks}{/block:IndexPage}
-{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
-</center>
-{/block:Photoset}
+      <article id="footer-content-middle" class="col-xs-12 col-sm-4 col-md-3 text-center">
+        <h6>Drop us a line</h6>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:info@launchcode.org">info@launchcode.org</a><br/>
+        <h6 style="padding-top: 5%;">Stay in touch</h6>
+        <i class="fa fa-newspaper-o"></i>
+        <a href="" data-toggle="modal" data-target="#emailModal">Join our newsletter</a>
+      </article>
 
-{block:Text}
-<div class="text"><div class="xtext">
-<span class="title">{Title}</span>
-<hr style="width:60px; border: 1px solid #f1f1f1; margin-bottom:15px; display: inline-block;"/>
-{Body}
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-</div></div>
-{/block:Text}
+      <article id="footer-content-right" class="col-xs-6 col-sm-6 col-md-4 carousel slide carousel-fade" data-ride="carousel">
+        <h6>Special Thanks to</h6>
 
-{block:Link}
-<div class="text">
-<div class="xlink">
-<a href="{URL}"><span class="title">{Name} <b>&rarr;</b></span></a>
-{block:Description}
-<div style="margin-top:8px;">
-<div class="caption">{Description}</div>{/block:Description}
-</div></div>
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-</div>
-{block:Link}
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-sm-12">
+                <p><a href="http://www.restaurantpi.com/" target="_blank">Pi Pizzeria</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="https://www.edx.org/" target="_blank">edX</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.stlwarehouse.com/" target="_blank">Warehouse of Fixtures</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.thirddegreeglassfactory.com/" target="_blank">Third Degree Glass Factory</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.jpmorganchase.com/" target="_blank">JP Morgan</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="https://www.hackerrank.com/work" target="_blank">HackerrankX</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.polsinelli.com/" target="_blank">Polsinelli</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.hannahradcliff.com/thumbcatmedia/" target="_blank">Thumbcat Media</a></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12">
+                <p><a href="http://www.claconnect.com/" target="_blank">CliftonLarsenAllen</a></p>
+              </div>
+            </div>
+          </div>
 
-{block:Quote}
-<div class="text">
-<div class="xquote">
-{Quote}</span></div>
-{block:Source}
-<div style="margin-top:5px;margin-left:3px;">
-<strong>- {Source}</strong></div>{/block:Source}
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
+          <!-- Controls -->
+          <a class="left carousel-control" href="#footer-content-right" role="button" data-slide="prev">
+            <span class="btn-arrow-left"></span>
+          </a>
+          <a class="right carousel-control" href="#footer-content-right" role="button" data-slide="next">
+            <span class="btn-arrow-right"></span>
+          </a>
+        
+      </article>
+    </div>
+  </div>
 
-</div>
-{/block:Quote}
-
-{block:Chat}
-<div class="chat">
-{block:Title}
-<a href="{Permalink}">
-<div class="title">{Title}</div></a>
-{/block:Title}
-<ul id="chat">
-{block:Lines}
-<li class="{Alt} user_{UserNumber}">
-{block:Label}
-<span class="label">{Label}</span>
-{/block:Label}
-{Line}
-</li>
-{/block:Lines}
-</ul>
-</div>
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-{/block:Chat}
-
-{block:Audio}
-<div class="audio">
-{block:AlbumArt}{block:indexpage}<a href="{Permalink}">{/block:indexpage}<img src="{AlbumArtURL}" alt="{PhotoAlt}" style="{block:indexpage}width:250px;{/block:indexpage}{block:permalinkpage}width:500px;height:500px;{/block:permalinkpage}"/>{/block:AlbumArt}
-<center>
-<div style="padding:10px;">{AudioPlayerBlack}</div>
-{block:Caption}{Caption}{/block:Caption}
-</div></center>
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-{/block:Audio}
-
-{block:Answer}
-<div class="text"><div class="xtext">
-<div style="display:block:"><b>{Question} </b></div>
-<div style="padding-top:10px;">{Answer} </div>
-<br><i>asked by {Asker}</i>
-{block:IndexPage}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-</div></div>{/block:Answer}
-
-{block:Video}
-{block:IndexPage}
-<div class="video">
-<center>{Video-250}</center>
-{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-<ul class="textbuttons">
-<li><a href="{Permalink}">{NoteCountwithLabel}</a></li>
-<li>{ReblogButton color="gray" size=17}</li>
-<li>{LikeButton color="gray" size=17}</li>
-</ul><br>
-{/block:IndexPage}
-{block:PermalinkPage}
-<center>{Video-500}</center>
-{/block:PermalinkPage}
-{block:Video}
-
-{block:PermalinkPage}
-<div style="display:block;margin-top:10px;">
-{block:NoteCount}This {PostType}{block:Photoset}set{/block:Photoset} {block:Text}post {/block:Text}{block:chat}post {block:chat}{block:Audio}file {/block:Audio}with {NoteCountWithLabel}{/block:NoteCount}{block:Date}  was posted {TimeAgo} on the {DayOfMonth}{DayOfMonthSuffix} of {Month}, {Year}. {/block:Date} </div>
-<div style="display:block;margin-top:10px;">
-{block:RebloggedFrom}Reblogged from: <a href="{ReblogParentURL}" title="Check out {ReblogParentName}'s blog I reblogged this {PostType} {block:Text}post {/block:Text}{block:chat}post {block:chat}{block:Audio}file {/block:Audio}from them." target="_blank">{ReblogParentName}</a>
-<br>Posted by: <a href="{ReblogRootParentURL}" title="Just incase you were wondering {ReblogRootName} originally posted this {PostType}{block:Text} post{/block:Text}{block:chat} post{block:chat}{block:Audio} file{/block:Audio}." target="_blank">{ReblogRootName}</a><br>
-{/block:RebloggedFrom}
-{block:HasTags}
-Tags:{block:Tags} <a href="{TagURL}" title="View more posts on my blog tagged '{Tag}'.">#{Tag}</a>{/block:Tags}<br>{/block:hasTags}
-{block:Caption}<div style="margin-top:10px;">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
-
-{block:PostNotes}
-<div style="width:500px;height:250px;overflow-y:scroll;overflow-x:hidden;margin-left:-5px;margin-top:10px;">{PostNotes}</div>
-{/block:PostNotes}
-</div>
-</div>
-{/block:Posts}
-
-</div></div>
+  <div id="footer-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <p id="copyright" class="col-sm-6">Copyright 2014 &copy; LaunchCode</p>
+        <p id="terms" class="col-sm-6"><a href="launchcode.org/terms-of-service">Terms of Servcie</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 
-{block:IndexPage}
-<script type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/dbek3sy/iBElrgjim/jquerymasonry.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/dbek3sy/Qyblrgjfn/jqueryinfintescroll.js"></script>
-<script type="text/javascript">
-$(window).load(function () {
-    var $content = $('#content');
-    $content.masonry({
-        itemSelector: '.entry, .sidebar',
-        stamp: ".stamp"
-    }),
 
-    $content.infinitescroll({
-        navSelector : 'div#pagination',
-        nextSelector : 'div#pagination a#nextPage',
-        itemSelector : '.entry',
-        loading: {
-            finishedMsg: '',
-            img: ''
-            },
-        bufferPx : 600,
-        debug : false,
-    },
-    // call masonry as a callback.
-    function( newElements ) {
-        window.n = window.n || 0;
-        Tumblr.LikeButton.get_status_by_page(++window.n);
-        var $newElems = $( newElements );
-        $newElems.hide();
-        // ensure that images load before adding to masonry layout
-        $newElems.imagesLoaded(function(){
-            $content.masonry( 'appended', $newElems, true, function(){$newElems.fadeIn(300);} );
-        });
-    
-    });
+            <!-- emailModal -->
+            <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLable" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header" style="border: none;">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  </div>
+                  <div class="modal-body">               
+                    <div class="container-fluid">                               
+                      <div class="row-fluid"> 
+                        <div class="col-xs-10 col-xs-offset-1 promotion comfy-border justify">   
+                          <!-- Begin MailChimp Signup Form -->
 
-});
-</script>
-{/block:IndexPage}
+                          <div id="mc_embed_signup">
+                          <form action="//launchcodestl.us7.list-manage.com/subscribe/post?u=6215fa274b331633a4512170c&amp;id=7babe052cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          
+                          <h4 class="light-blue font-chubby">LAUNCHCODE NEWSLETTER</h4>
+                          <h1 class="font-skinny dark-blue">Subscribe to our mailing list.</h1>
+                          
+                          
+                          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                          <div class="mc-field-group">
+                          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                          </label>
+                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                          </div>
+                          <div class="mc-field-group">
+                          <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                          </div>
+                          <div class="mc-field-group">
+                          <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                          </div>
+                          <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_6215fa274b331633a4512170c_7babe052cf" tabindex="-1" value=""></div>
+                             <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                          </form>
+                          </div>
+                          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
+                          <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                          <!--End mc_embed_signup-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
 
 
-{block:IndexPage}
-{block:Pagination}
-<div id="pagination">
-{block:NextPage}
-<a id="nextPage" href="{NextPage}"></a>
-{/block:NextPage}
-{block:PreviousPage}
-<a href="{PreviousPage}"></a>
-{/block:PreviousPage}
-</div>
-{/block:Pagination}
-{/block:IndexPage}
 
-<script type="text/javascript" src="http://static.tumblr.com/3zmswwt/Opemwnkmq/scripts.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/3zmswwt/HNCmwoa0e/addons.js"></script>
 
-</body></html><!-- END OF THEME -->
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/addons.js"></script>
+<script type="text/javascript" src="js/main.js"></script> 
+</body></html>

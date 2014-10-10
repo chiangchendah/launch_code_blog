@@ -1,0 +1,133 @@
+.dabomb {
+  display: inline-block;
+  height: 60px;
+  width: 220px;
+  line-height: 1;
+  background-image: url(../img/dabomb.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 15px;
+}
+
+/* navbar */
+
+.navbar-default {
+  box-shadow: inset 0px -1px 0px 0px rgba(230, 230, 230, 0.392);
+  padding-bottom: 0 !important;
+}
+
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar > .container-fluid .navbar-brand {
+  color: #344a5f;
+  font-family: "Nexa";
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.navbar .divider {
+  height: 66px;
+  border-left: 1px solid #f1f1f1;
+}
+
+.navbar-default .navbar-nav .social > a{
+  padding-top: 21.5px;
+}
+
+.navbar li a {
+  font-size: 13px;
+}
+
+.navbar li a.navbar-content {
+  color: #344a5f;
+  letter-spacing: 1.25px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 22px;
+}
+
+.navbar li a.primary-link {
+  color: #5c93ce;
+  font-family: "Nexa";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding-top: 22.5px;
+}
+
+.navbar li.social a {
+  color: #cacbcc;
+}
+
+.navbar .registration {
+  padding-right: 30px;
+}
+@media screen and (max-width: 791px) {
+
+  .navbar .registration {
+    padding-right: 0;
+    border-top: 1px solid #f1f1f1;
+  }
+}
+
+.separator {
+  line-height: 17.8571434020996px;
+  padding-top: 2px;
+}
+
+.navbar .registration .separator p.navbar-text {
+  color: #cacbcc;
+  font-family: "Nexa";
+  margin: 23.5px 0 0;
+  line-height: normal;
+}
+
+.navbar .registration li a {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 13px;
+}
+
+/* responsive middle nav-tabs */
+@media screen and (max-width: 1056px) {
+  
+  .divider.cloak, .social.cloak {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 975px) {
+  
+  .nav.navbar-nav li:nth-child(8) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 881px) {
+  
+  .nav.navbar-nav li:nth-child(7) {
+    display: none;
+  }
+}
+/* divider for hamburger */
+@media screen and (max-width: 767px) {
+  
+  .nav.navbar-nav li:nth-child(2) a.primary-link {
+    padding-top: 10px;
+  }
+
+  
+  .nav.navbar-nav li:nth-child(6) {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+  }
+
+  
+  .nav.navbar-nav li:nth-child(4) {
+    margin-bottom: 10px;
+  }
+}
